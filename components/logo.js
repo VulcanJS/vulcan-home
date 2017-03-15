@@ -1,21 +1,19 @@
 import React from 'react'
-import { LogoBlock, LogoImage } from './styled-components.js';
 import { prefixLink } from 'gatsby-helpers'
 import { Link } from 'react-router'
 
-import icons from '../data/icons.yaml'
+import { logo } from '../data/icons.yaml'
+
+import { LogoBlock, LogoImage, Title, Tagline } from '../components/styled-components.js'
 
 const Logo = () => 
 
   <LogoBlock>
 
-    <Link to={prefixLink('/')}>
+      <LogoImage dangerouslySetInnerHTML={{__html: logo}}/>
 
-      <LogoImage dangerouslySetInnerHTML={{__html: icons.sg}}/>
-
-      <span>Sacha Greif</span>
-
-    </Link>
+      <Title>Vulcan.js</Title>
+      <Tagline>The full-stack React+GraphQL framework</Tagline>
 
   </LogoBlock>
 

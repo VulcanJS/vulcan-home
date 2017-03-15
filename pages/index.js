@@ -5,38 +5,29 @@ import Helmet from 'react-helmet'
 import { config } from 'config'
 import _ from 'underscore'
 
-import data from '../data/site.yaml'
-import icons from '../data/icons.yaml'
-
-import Section from '../components/section.js'
-import SectionIntro from '../components/section-intro.js'
-import Footer from '../components/footer.js'
+import Logo from '../components/logo.js'
+import { Wrapper, Links } from '../components/styled-components.js'
 
 export default class Index extends React.Component {
   render () {
-
-    const dataWithKeys = _.map(data, (item, key) => {
-      item.name = key
-      return item
-    })
-
-    const [intro, ...rest] = dataWithKeys
-
     return (
-      <div>
+      <Wrapper>
         <Helmet
           title={config.siteTitle}
           meta={[
-            {"name": "description", "content": "Sacha Greif: Designer, Developer, Entrepreneur"},
+            {"name": "description", "content": "VulcanJS: The full-stack React+GraphQL framework"},
           ]}
           link={[
-            {rel: "shortcut icon", href: "images/logo.png"},
+            {rel: "shortcut icon", href: "images/vulcan-logo-border.png"},
           ]}
         />
-        <SectionIntro {...intro} index={0} />
-        {rest.map((sectionData, index) => <Section {...sectionData} index={index+1} key={sectionData.name} />)}
-        <Footer />
-      </div>
+        <Logo />
+        <Links>
+          <a href="http://docs.vulcanjs.org">Documentation</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/TelescopeJS/Telescope/">GitHub</a>
+        </Links>
+      </Wrapper>
     )
   }
 }
