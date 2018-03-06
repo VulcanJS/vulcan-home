@@ -25,7 +25,7 @@ export default class Index extends React.Component {
         <Links>
           <a href="http://docs.vulcanjs.org">Documentation</a>
           &nbsp;|&nbsp;
-          <a href="https://github.com/TelescopeJS/Telescope/">GitHub</a>
+          <a href="https://github.com/vulcanjs/vulcan">GitHub</a>
         </Links>
       </Wrapper>
     )
