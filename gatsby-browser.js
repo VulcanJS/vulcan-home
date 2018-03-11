@@ -1,6 +1,7 @@
-import ReactGA from 'react-ga'
-ReactGA.initialize('UA-30194315-4')
+/**
+ * Implement Gatsby's Browser APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/browser-apis/
+ */
 
-exports.onRouteUpdate = (state, page, pages) => {
-  ReactGA.pageview(state.pathname)
-}
+ // You can delete this file if you're not using it

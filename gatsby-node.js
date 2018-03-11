@@ -1,7 +1,7 @@
-// import Shell from 'child_process'
-Shell = require('child_process')
+/**
+ * Implement Gatsby's Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/node-apis/
+ */
 
-exports.postBuild = function (pages, callback) {
-  Shell.execSync("cp -r static/* public/")
-  callback()
-}
+ // You can delete this file if you're not using it

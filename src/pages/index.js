@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
 import Helmet from 'react-helmet'
-import { config } from 'config'
 import _ from 'underscore'
 
 import Logo from '../components/logo.js'
@@ -13,7 +11,7 @@ export default class Index extends React.Component {
     return (
       <Wrapper>
         <Helmet
-          title={config.siteTitle}
+          title="VulcanJS"
           meta={[
             {"name": "description", "content": "VulcanJS: The full-stack React+GraphQL framework"},
           ]}
@@ -26,6 +24,14 @@ export default class Index extends React.Component {
           <a href="http://docs.vulcanjs.org">Documentation</a>
           &nbsp;|&nbsp;
           <a href="https://github.com/vulcanjs/vulcan">GitHub</a>
+          &nbsp;|&nbsp;
+          <a href="https://medium.com/vulcanjs" data-reactid="15">Blog</a>
+          &nbsp;|&nbsp;
+          <a href="https://trello.com/b/dwPR0LTz/nova-roadmap" data-reactid="17">Roadmap</a>
+          &nbsp;|&nbsp;
+          <a href="https://www.youtube.com/channel/UCGIvQQ6zw7ov2cHgD70HFlA" data-reactid="19">YouTube</a>
+          &nbsp;|&nbsp;
+          <a href="http://slack.telescopeapp.org" data-reactid="21">Slack</a>
         </Links>
       </Wrapper>
     )

@@ -4,43 +4,24 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "d3": "^4.4.0",
-    "front-matter": "^2.1.1",
-    "gatsby": "^0.12.20",
-    "highlight.js": "^9.8.0",
-    "history": "^2.0.2",
-    "js-yaml": "^3.7.0",
-    "markdown-it": "^7.0.1",
-    "markdown-it-abbr": "^1.0.3",
-    "markdown-it-attrs": "^0.6.3",
-    "markdown-it-deflist": "^2.0.1",
-    "markdown-it-footnote": "^3.0.1",
-    "markdown-it-sub": "^1.0.0",
-    "moment": "^2.17.1",
-    "object-assign": "^4.1.0",
-    "react-d3-wrap": "^2.1.2",
-    "react-faux-dom": "^3.0.0",
-    "react-ga": "^2.1.2",
-    "react-headroom": "^2.1.2",
-    "react-helmet": "^3.2.2",
-    "react-responsive-grid": "^0.3.3",
-    "recompose": "^0.21.2",
-    "styled-components": "^1.2.1",
-    "textures": "^1.0.4",
-    "toml-js": "0.0.8"
-  },
-  "devDependencies": {
-    "gh-pages": "^0.12.0"
+    "gatsby": "^1.9.223",
+    "gatsby-link": "^1.6.38",
+    "gatsby-plugin-react-helmet": "^2.0.6",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.2.1",
+    "underscore": "^1.8.3"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.11.1"
   }
 }
