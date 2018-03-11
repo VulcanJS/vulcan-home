@@ -27,8 +27,6 @@ export default class Index extends React.Component {
           &nbsp;|&nbsp;
           <a href="https://medium.com/vulcanjs" data-reactid="15">Blog</a>
           &nbsp;|&nbsp;
-          <a href="https://trello.com/b/dwPR0LTz/nova-roadmap" data-reactid="17">Roadmap</a>
-          &nbsp;|&nbsp;
           <a href="https://www.youtube.com/channel/UCGIvQQ6zw7ov2cHgD70HFlA" data-reactid="19">YouTube</a>
           &nbsp;|&nbsp;
           <a href="http://slack.telescopeapp.org" data-reactid="21">Slack</a>
