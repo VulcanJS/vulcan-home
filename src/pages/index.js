@@ -21,15 +21,17 @@ export default class Index extends React.Component {
         />
         <Logo />
         <Links>
-          <a href="http://docs.vulcanjs.org">Documentation</a>
+          <a href="https://vulcan-next.vercel.app">Documentation</a>
           &nbsp;|&nbsp;
-          <a href="https://github.com/vulcanjs/vulcan">GitHub</a>
+          <a href="https://github.com/vulcanjs/vulcan-next">GitHub</a>
           &nbsp;|&nbsp;
           <a href="https://medium.com/vulcanjs" data-reactid="15">Blog</a>
           &nbsp;|&nbsp;
           <a href="https://www.youtube.com/channel/UCGIvQQ6zw7ov2cHgD70HFlA" data-reactid="19">YouTube</a>
           &nbsp;|&nbsp;
-          <a href="http://slack.telescopeapp.org" data-reactid="21">Slack</a>
+          <a href="http://slack.vulcanjs.org" data-reactid="21">Slack</a>
+          &nbsp;|&nbsp;
+          <a href="http://docs.vulcanjs.org">Legacy documentation (Vulcan Meteor)</a>
         </Links>
       </Wrapper>
     )
