@@ -21,7 +21,7 @@ export default class Index extends React.Component {
         />
         <Logo />
         <Links>
-          <a href="https://vulcan-next.vercel.app">Documentation</a>
+          <a href="https://vulcan-docs.vercel.app">Documentation</a>
           &nbsp;|&nbsp;
           <a href="https://github.com/vulcanjs/vulcan-next">GitHub</a>
           &nbsp;|&nbsp;
